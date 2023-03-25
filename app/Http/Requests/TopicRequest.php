@@ -32,7 +32,8 @@ class TopicRequest extends Request
     public function messages()
     {
         return [
-            // Validation messages
+            'title.min' => '标题必须至少两个字符',
+            'body. in'  =>  '文章内容必须至少三个字符'
         ];
     }
 }
