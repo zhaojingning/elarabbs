@@ -16,9 +16,4 @@ class Model extends EloquentModel
         return $query->orderBy('order', 'desc');
     }
 
-    public function isAuthorOf($model)
-    {
-        return $this->id == $model->user_id;
-    }
-
 }
